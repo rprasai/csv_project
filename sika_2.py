@@ -25,7 +25,7 @@ for row in csv_file:
 import matplotlib.pyplot as plt
 
 fig = plt.figure()
-plt.plot(highs, c="red")
+plt.plot(dates, highs, c="red")
 
 plt.title("Daily high temperatures, July 2018", fontsize=16)
 plt.xlabel("", fontsize=12)

@@ -27,13 +27,26 @@ for row in csv_file:
 import matplotlib.pyplot as plt
 
 fig = plt.figure()
+
 plt.plot(dates, highs, c="red")
 plt.plot(dates, lows, c="blue")
+
+# filling the color between the lines
+plt.fill_between(dates, highs, lows, facecolor="blue", alpha=0.1)
 
 plt.title("Daily high temperatures, 2018", fontsize=16)
 plt.xlabel("", fontsize=12)
 plt.ylabel("Temperature (F)", fontsize=12)
 plt.tick_params(axis="both", labelsize=12)
 
+
 fig.autofmt_xdate()
+plt.show()
+
+
+fig2, a = plt.subplots(2)
+
+a[0].plot(dates, highs, c="red")
+a[1].plot(dates, lows, c="blue")
+
 plt.show()
