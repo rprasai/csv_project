@@ -1,0 +1,12 @@
+Automatic Indexes: We hard coded the indexes corresponding to the TMIN and TMAX
+columns. Use the header row to determine the indexes for these values, so your program can work
+for Sitka or Death Valley. Use the station name to automatically generate an appropriate title
+for your graph as well.
+
+create 2 subplot graphs in one visualization so you can see both graphs to compare side by side.
+
+Matplotlib's pyplot API has a convenience function called subplots() which acts as a
+utility wrapper and helps in creating common layouts of subplots, including the
+enclosing figure object, in a single call.
+
+# fig, ax = plt.subplots(2,2)  -  this will create a visualization with 2 charts on it
